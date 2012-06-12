@@ -1,0 +1,33 @@
+body {
+	width: 800px;
+	margin: 0 auto;
+	
+	background-color: @backgroundColor;
+}
+
+.container {
+	padding-top: @gridColumnWidth;
+	padding-bottom: @gridColumnWidth;
+	padding-left: @gridColumnWidth / 2;
+	padding-right: @gridColumnWidth / 2;
+	margin-bottom: @gridColumnWidth / 2;
+
+	background-color: darken(@backgroundColor, 8%);
+	
+	border-radius: 10px;
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.presentation {
+	
+}
+
+footer {
+	padding-top: @gridColumnWidth / 2;
+
+	font-size: 0.8 * @baseFontSize;
+	
+	border-top: 1px solid #999;
+}

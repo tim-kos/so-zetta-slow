@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Pequeno detalhe ao se trabalhar com Array.prototype.reduce
 ---
 
