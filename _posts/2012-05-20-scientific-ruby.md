@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Scientific Ruby
 ---
 
@@ -8,7 +8,7 @@ Não, este não é um pouco (apenas) sobre a [Sciruby](http://sciruby.com), por 
 Vou deixar aqui a lista de _gems_ as quais considero úteis para trabalhos científicos - desde clustering até visualização, passando por otimização, interpolação e álgebra linear.
 
 A lista
-=======
+-------
 
 + SciRuby: [Site oficial](http://sciruby.com) ou o [repositório](http://github.com/sciruby/sciruby)
 
@@ -17,4 +17,5 @@ Pretende ser para Ruby o que a SciPy (junto da NumPy e de outras que não conhe�
 + NMatrix
 + ai4r: 
 + Rubyvis
-+ 
+
+Ainda estou terminando a lista e vou atualizar isso aqui.

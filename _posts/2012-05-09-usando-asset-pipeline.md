@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Aprendendo a usar a asset pipeline no Rails (>= 3.1)
+layout: post
+title: Aprendendo a usar a asset pipeline no Rails 3.1+
 ---
 
 Depois de ter tido alguns problemas com a assets pipeline, tomei vergonha na cara e li o guia no [RailsGuides](http://guides.rubyonrails.org/asset_pipeline.html). Agora que entendi melhor como ele funciona, posso falar um pouco mais a respeito.
@@ -12,7 +12,7 @@ Meu primeiro problema com ela foi "Mas para que diabos isso serve se eu não uso
 Há três lugares básicos para deixar os assets: app/assets, lib/assets e vendor/assets. Isso nos permite separar código criado por nós e por outros de forma natural - criamos um "pushback" que nos mantém organizados, como o DHH falou em sua apresentação. Dessa forma, é possível saber onde colocar código sem precisar pensar muito ou largar tudo em uma pasta só.
 
 Frameworks
-==========
+----------
 
 Outro fato legal é que torna-se possível trocar a biblioteca JavaScript padrão do Rails mudando apenas uma linha do Gemfile. Por padrão, temos a seguinte linha:
 
@@ -29,7 +29,7 @@ E podemos colocar vários frameworks assim. Por exemplo, o Bootstrap:
 A gem pode ser baixada [aqui](https://github.com/seyhunak/twitter-bootstrap-rails), onde também tem instruções de uso no README.
 
 Caching
-=======
+-------
 
 Uma última característica que eu achei interessante é relacionada com o caching dos arquivos application.js e application.css. Agora, após a precompilação (_rake assets:precompile_), uma hash MD5 é adicionada ao nome do arquivo, o que impede problemas com arquivos sendo mudados mas tendo versões antigas no cache. Um exemplo:
 
