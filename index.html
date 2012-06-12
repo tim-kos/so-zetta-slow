@@ -1,0 +1,22 @@
+---
+layout: default
+title: onox - a source of code, coffee and math
+---
+
+<h1>O que é isto?</h1>
+
+<div class='presentation'>
+	
+	<p>Este blog foi criado em cerca de 2h com o <a href='https://github.com/mojombo/jekyll'>Jekyll</a>, alguns arquivos LESS do <a href="">Twitter's Bootstrap</a> e uns rascunhos feitos durante uma aula bastante chata. Nada especial, mas preciso de um lugar para colocar o que escrevo (e <3 Ruby).</p>
+	
+	<p>Se precisar falar comigo, me procure em <i>carlos dot agarie at gmail dot com</i>, no meu twitter (<a href='http://twitter.com/carlos_agarie'>@carlos_agarie</a>), no meu <a href='http://github.com/agarie'>github</a> ou via sinais de fumaça.</p>
+
+	<p>Tenho um blog em inglês onde escrevo sobre programação, principalmente as ferramentas que encontro por aí. Também falo de matemática, inteligência artificial, pokémon e o que parecer interessante. Só entrar em <a href="http://turing-machine.tumblr.com" target="_blank">turing-machine.tumblr.com</a>.</p>
+
+	<p>Tenho o hábito de escrever mais no tumblr, mas costumo investir mais tempo quando coloco algo novo aqui.</p>
+
+</div>
+
+ {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span>: <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}

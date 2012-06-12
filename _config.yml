@@ -1,0 +1,7 @@
+markdown: rdiscount
+
+auto: true
+server: true
+server_port: 4000
+
+lsi: false
