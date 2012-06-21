@@ -32,18 +32,17 @@ header a {
 	text-decoration: none;
 }
 
-.no-style {
-	text-decoration: none;
-	color: @gray;
+footer {
+	padding-top: @gridColumnWidth / 4;
+	border-top: 1px solid #999;
+}
+
+footer p {
+	font-size: 0.9 * @baseFontSize;
 }
 
 h2 {
 	padding-bottom: @baseLineHeight * 0.5;
-}
-
-.presentation {
-	padding-top: @gridColumnWidth / 4;
-	padding-bottom: @gridColumnWidth / 4;
 }
 
 article {
@@ -64,11 +63,7 @@ nav.post-list {
 	list-style-type: none;
 }
 
-footer {
-	padding-top: @gridColumnWidth / 4;
-	border-top: 1px solid #999;
-}
-
-footer p {
-	font-size: 0.9 * @baseFontSize;
+.no-style {
+	text-decoration: none;
+	color: @gray;
 }
