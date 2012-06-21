@@ -10,26 +10,24 @@
 </head>
 <body>
 	
-	<div class='container'>
-		<!-- Post content -->
+	{% include header.html %}
+	
+	<section class='container'>
 		
 		<header>
-			<a href='/' class='no-style'><h1>{{ page.title }}</h1></a>
+			<h1>{{ page.title }}</h1>
 		</header>
 		
-		<article class=''>
-
+		<article>
 			{{content}}
-		
 		</article>
 	
-		<!-- Post list -->
 		{% include post-list.html %}
-	</div>
-		
-	<footer class='center'>
-		<p>Carlos Agarie &copy; 2012</p>
-	</footer>
 	
+		{% include disqus.html %}
+	</section>
+		
+	{% include footer.html %}
+
 </body>
 </html>

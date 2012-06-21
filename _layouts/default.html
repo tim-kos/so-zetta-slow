@@ -9,16 +9,14 @@
 	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
-	
-	<div class="container">
 
+	{% include header.html %}
+
+	<section class='container'>
 		{{content}}
-		
-	</div>
+	</section>
 	
-	<footer class='center'>
-		<p>Carlos Agarie &copy; 2012</p>
-	</footer>
+	{% include footer.html %}
 	
 </body>
 </html>
