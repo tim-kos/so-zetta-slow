@@ -21,6 +21,20 @@ body {
 	-o-border-radius: 10px;
 }
 
+/* LINKS */
+
+a {
+  color: @linkColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @linkColorHover;
+  text-decoration: underline;
+}
+
+/* HEADER */
+
 header {
 	padding-top: @gridColumnWidth / 4;
 	padding-bottom: @gridColumnWidth / 4;
@@ -32,38 +46,49 @@ header a {
 	text-decoration: none;
 }
 
+.main-header {
+	font-family: 'EB Garamond', sans-serif;
+}
+
+.main-header h1 {
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+
+/* FOOTER */
+
 footer {
 	padding-top: @gridColumnWidth / 4;
 	border-top: 1px solid #999;
 }
 
 footer p {
-	font-size: 0.9 * @baseFontSize;
+	font-size: 0.85 * @baseFontSize;
+	letter-spacing: 1px;
 }
 
-h2 {
-	padding-bottom: @baseLineHeight * 0.5;
-}
+/* POST */
 
 article {
 	padding-top: @gridColumnWidth / 4;
 	padding-bottom: @gridColumnWidth / 4;
 }
 
-nav {
+/* POST-LIST */
+
+.post-list {
 	padding-top: @gridColumnWidth / 4;
+	padding-bottom: @gridColumnWidth / 4;
+	margin-bottom: @gridColumnWidth / 2;
+	
 	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
 }
 
-nav.h3 {
+.post-list h3 {
 	color: @grayDarker;
 }
 
-nav.post-list {
+.post-list ul {
 	list-style-type: none;
-}
-
-.no-style {
-	text-decoration: none;
-	color: @gray;
 }

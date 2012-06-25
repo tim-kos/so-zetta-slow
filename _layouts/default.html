@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="author" content="Carlos Agarie">
-	
-	<title>{{ page.title }}</title>
-	
-	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" charset="utf-8">
-</head>
-<body>
+{% include header.html %}
 
-	{% include header.html %}
+<section class='container'>
+	{{content}}
+</section>
 
-	<section class='container'>
-		{{content}}
-	</section>
-	
-	{% include footer.html %}
-	
-</body>
-</html>
+{% include footer.html %}

@@ -1,33 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="author" content="Carlos Agarie">
-	
-	<title>{{ page.title }}</title>
-	
-	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" charset="utf-8">
-</head>
-<body>
+{% include header.html %}
 
-	{% include header.html %}
+<section class='container'>
 
-	<section class='container'>
+	<header>
+		<h1>
+			{{ page.title }} <small>{{ page.date | date: "%d/%m/%Y" }}</small>
+		</h1>
+	</header>
 
-		<header>
-			<h1>{{ page.title }}</h1>
-		</header>
+	<article>
+		{{content}}
+	</article>
 
-		<article>
-			{{content}}
-		</article>
+	{% include post-list.html %}
 
-		{% include post-list.html %}
-	
-		{% include disqus.html %}
-	</section>
+	{% include disqus.html %}
+</section>
 
-	{% include footer.html %}
-
-</body>
-</html>
+{% include footer.html %}
