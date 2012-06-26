@@ -126,20 +126,20 @@ textarea {
   text-align: center;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 12.6px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 25.2px;
 }
 p small {
   font-size: 12px;
   color: #999999;
 }
 .lead {
-  margin-bottom: 20px;
+  margin-bottom: 25.2px;
   font-size: 20px;
   font-weight: 200;
-  line-height: 30px;
+  line-height: 37.8px;
 }
 h1,
 h2,
@@ -163,20 +163,20 @@ h6 small {
 }
 h1 {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 50.4px;
 }
 h1 small {
   font-size: 18px;
 }
 h2 {
   font-size: 24px;
-  line-height: 40px;
+  line-height: 50.4px;
 }
 h2 small {
   font-size: 18px;
 }
 h3 {
-  line-height: 30px;
+  line-height: 37.8px;
   font-size: 18px;
 }
 h3 small {
@@ -185,7 +185,7 @@ h3 small {
 h4,
 h5,
 h6 {
-  line-height: 20px;
+  line-height: 25.2px;
 }
 h4 {
   font-size: 14px;
@@ -202,8 +202,8 @@ h6 {
   text-transform: uppercase;
 }
 .page-header {
-  padding-bottom: 19px;
-  margin: 20px 0;
+  padding-bottom: 24.2px;
+  margin: 25.2px 0;
   border-bottom: 1px solid #eeeeee;
 }
 .page-header h1 {
@@ -212,7 +212,7 @@ h6 {
 ul,
 ol {
   padding: 0;
-  margin: 0 0 10px 25px;
+  margin: 0 0 12.6px 25px;
 }
 ul ul,
 ul ol,
@@ -227,7 +227,7 @@ ol {
   list-style: decimal;
 }
 li {
-  line-height: 20px;
+  line-height: 25.2px;
 }
 ul.unstyled,
 ol.unstyled {
@@ -235,20 +235,20 @@ ol.unstyled {
   list-style: none;
 }
 dl {
-  margin-bottom: 20px;
+  margin-bottom: 25.2px;
 }
 dt,
 dd {
-  line-height: 20px;
+  line-height: 25.2px;
 }
 dt {
   font-weight: bold;
 }
 dd {
-  margin-left: 10px;
+  margin-left: 12.6px;
 }
 hr {
-  margin: 20px 0;
+  margin: 25.2px 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
@@ -270,18 +270,18 @@ abbr {
 }
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 20px;
+  margin: 0 0 25.2px;
   border-left: 5px solid #eeeeee;
 }
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 31.5px;
 }
 blockquote small {
   display: block;
-  line-height: 20px;
+  line-height: 25.2px;
   color: #999999;
 }
 blockquote small:before {
@@ -306,8 +306,8 @@ blockquote:after {
 }
 address {
   display: block;
-  margin-bottom: 20px;
-  line-height: 20px;
+  margin-bottom: 25.2px;
+  line-height: 25.2px;
   font-style: normal;
 }
 small {
