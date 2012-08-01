@@ -1,24 +1,25 @@
+html {
+	background-color: @backgroundColor;	
+}
+
 body {
-	width: 800px;
+	width: 960px;
 	margin: 0 auto;
-	
-	background-color: @backgroundColor;
 }
 
 .container {
-	padding-top: @gridColumnWidth / 4;
+	padding-top: @gridColumnWidth;
 	padding-bottom: @gridColumnWidth / 4;
-	padding-left: @gridColumnWidth / 2;
-	padding-right: @gridColumnWidth / 2;
+	padding-left: @gridColumnWidth;
+	padding-right: @gridColumnWidth;
 	margin-top: @gridColumnWidth / 2;
 	margin-bottom: @gridColumnWidth / 2;
 
-	background-color: darken(@backgroundColor, 8%);
+	background-color: lighten(@backgroundColor, 8%);
 	
-	border-radius: 10px;
-	-webkit-border-radius: 10px; 
-	-moz-border-radius: 10px;
-	-o-border-radius: 10px;
+	-moz-box-shadow: @gray 2px 2px 6px 0;
+	-webkit-box-shadow: @gray 2px 2px 6px 0;
+	box-shadow: @gray 2px 2px 6px 0;
 }
 
 /* LINKS */
@@ -26,11 +27,11 @@ body {
 a {
   color: @linkColor;
   text-decoration: none;
-}
-
-a:hover {
-  color: @linkColorHover;
-  text-decoration: underline;
+	
+	&:hover {
+	  color: @linkColorHover;
+	  text-decoration: underline;
+	}
 }
 
 /* HEADER */
@@ -38,33 +39,40 @@ a:hover {
 header {
 	padding-top: @gridColumnWidth / 4;
 	padding-bottom: @gridColumnWidth / 4;
-	
-	border-bottom: 1px solid #999;
-}
-
-header a {
-	text-decoration: none;
+		
+	a {
+		text-decoration: none;
+	}
 }
 
 .main-header {
-	font-family: 'EB Garamond', sans-serif;
-}
-
-.main-header h1 {
-	font-size: 40px;
-	letter-spacing: 3px;
+	font-family: @titleFontFamily;
+	font-weight: bold;
+	
+	a:hover {
+		text-decoration: none;
+	}
+	
+	h1 {
+		font-size: 40px;
+		letter-spacing: 3px;
+		line-height: 22px;
+		
+		small {
+			line-height: 20px;
+		}
+	}
 }
 
 /* FOOTER */
 
 footer {
 	padding-top: @gridColumnWidth / 4;
-	border-top: 1px solid #999;
-}
 
-footer p {
-	font-size: 0.85 * @baseFontSize;
-	letter-spacing: 1px;
+	p {
+		font-size: 0.80 * @baseFontSize;
+		letter-spacing: 1px;
+	}
 }
 
 /* POST */
@@ -81,14 +89,11 @@ article {
 	padding-bottom: @gridColumnWidth / 4;
 	margin-bottom: @gridColumnWidth / 2;
 	
-	border-top: 1px solid #999;
-	border-bottom: 1px solid #999;
-}
+	h3 {
+		color: @grayDarker;
+	}
 
-.post-list h3 {
-	color: @grayDarker;
-}
-
-.post-list ul {
-	list-style-type: none;
+	ul {
+		list-style-type: none;
+	}
 }
