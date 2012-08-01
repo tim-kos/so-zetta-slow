@@ -1,5 +1,11 @@
+.h1_with_size(@font-size) {
+	font-size: @font-size;
+	letter-spacing: 3px;
+	line-height: 22px;
+}
+
 html {
-	background-color: @backgroundColor;	
+	background-color: @pageBackgroundColor;	
 }
 
 body {
@@ -8,63 +14,41 @@ body {
 }
 
 .container {
-	padding-top: @gridColumnWidth;
+	padding: @gridColumnWidth;
 	padding-bottom: @gridColumnWidth / 4;
-	padding-left: @gridColumnWidth;
-	padding-right: @gridColumnWidth;
-	margin-top: @gridColumnWidth / 2;
-	margin-bottom: @gridColumnWidth / 2;
-
-	background-color: lighten(@backgroundColor, 8%);
 	
-	-moz-box-shadow: @gray 2px 2px 6px 0;
-	-webkit-box-shadow: @gray 2px 2px 6px 0;
-	box-shadow: @gray 2px 2px 6px 0;
+	@margin: @gridColumnWidth / 2;
+	margin: @margin 0 @margin 0;
+	
+	background-color: @containerBackgroundColor;
+	#translucent > .background(@containerBackgroundColor, 0.9);
+	
+	.box-shadow(@gray 2px 2px 6px 0);
 }
 
-/* LINKS */
-
-a {
-  color: @linkColor;
-  text-decoration: none;
-	
-	&:hover {
-	  color: @linkColorHover;
-	  text-decoration: underline;
-	}
-}
-
-/* HEADER */
+/*
+ * Header
+*/
 
 header {
 	padding-top: @gridColumnWidth / 4;
 	padding-bottom: @gridColumnWidth / 4;
 		
-	a {
-		text-decoration: none;
-	}
-}
-
-.main-header {
 	font-family: @titleFontFamily;
 	font-weight: bold;
-	
+
 	a:hover {
 		text-decoration: none;
 	}
-	
+
 	h1 {
-		font-size: 40px;
-		letter-spacing: 3px;
-		line-height: 22px;
-		
-		small {
-			line-height: 20px;
-		}
+		.h1_with_size(48px);
 	}
 }
 
-/* FOOTER */
+/*
+ * Footer
+*/
 
 footer {
 	padding-top: @gridColumnWidth / 4;
@@ -75,14 +59,24 @@ footer {
 	}
 }
 
-/* POST */
+/*
+ * Post
+*/
+
+.post {
+	h1 {
+		.h1_with_size(30px);
+	}
+}
 
 article {
 	padding-top: @gridColumnWidth / 4;
 	padding-bottom: @gridColumnWidth / 4;
 }
 
-/* POST-LIST */
+/*
+ * Posts
+*/
 
 .post-list {
 	padding-top: @gridColumnWidth / 4;
@@ -95,5 +89,19 @@ article {
 
 	ul {
 		list-style-type: none;
+	}
+}
+
+/*
+ * Links
+*/
+
+a {
+  color: @linkColor;
+  text-decoration: none;
+	
+	&:hover {
+	  color: @linkColorHover;
+	  text-decoration: underline;
 	}
 }
