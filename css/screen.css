@@ -319,6 +319,9 @@ cite {
 /*
  * Custom made files ahead.
 */
+span.important {
+  color: #9d261d;
+}
 html {
   background-color: #f5f5f5;
 }
@@ -389,14 +392,17 @@ article {
 .post-list ul {
   list-style-type: none;
 }
+.post-list ul li {
+  line-height: 1.4em;
+}
 /*
  * Links
 */
 a {
-  color: #2c9841;
+  color: #ff7039;
   text-decoration: none;
 }
 a:hover {
-  color: #1b5d28;
+  color: #ff4b06;
   text-decoration: underline;
 }
