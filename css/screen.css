@@ -333,7 +333,6 @@ body {
   padding: 60px;
   padding-bottom: 15px;
   margin: 30px 0 30px 0;
-  background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: #555555 2px 2px 6px 0;
   -moz-box-shadow: #555555 2px 2px 6px 0;
@@ -342,6 +341,13 @@ body {
 /*
  * Header
 */
+.navbar {
+  padding-left: 60px;
+}
+.navbar li {
+  padding-right: 10px;
+  float: left;
+}
 header {
   padding-top: 15px;
   padding-bottom: 15px;
