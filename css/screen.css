@@ -395,14 +395,21 @@ article {
 .post-list ul li {
   line-height: 1.4em;
 }
+.post-list a {
+  font-size: 16px;
+}
+.post-list a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
 /*
  * Links
 */
 a {
-  color: #ff7039;
+  color: #6194c8;
   text-decoration: none;
 }
 a:hover {
-  color: #ff4b06;
+  color: #407ab6;
   text-decoration: underline;
 }
