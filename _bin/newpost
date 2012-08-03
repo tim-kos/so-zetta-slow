@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+unless ARGV[0]
+  puts "Usage: newpost post-title"
+  exit(-1)
+end
+
+date_prefix = Time.now.strftime("%Y-%m-%d")
+postname = ARGV[0].strip.downcase.gsub(/ /, '-')
+
+header = <<-END
+---
+layout: post
+title: "#{ARGV[0]}"
+---
+
+END
+
+post = "/Users/carlosagarie/Dropbox/projects/blog/_posts/#{date_prefix}-#{postname}.md"
+
+File.open(post, 'w+') do |f|
+  f << header
+end
+
+system("mate #{post}")
+exit(0)
