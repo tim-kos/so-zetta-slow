@@ -1,0 +1,25 @@
+<p>Comecei a brincar com esta ferramenta para documentação inline de código JavaScript e estou gostando. Pretendo criar a documentação da minha <a href='http://onox.com.br/2012/02/refatorando-calculadora-dano/'>calculadora de dano para Pokémon</a> com ela.</p>
+
+<p>Para usá-la, deve ter o Java 1.7 instalado e configurado no seu computador. Depois, é só baixar do repositório no Github:</p>
+
+<code>
+	git clone https://github.com/micmath/jsdoc.git
+	cd jsdoc
+</code>
+
+<p>Agora é uma boa rodar os testes para verificar que está tudo ok.</p>
+
+<code>./jsdoc -T</code>
+
+<p>Finalmente, use a <a href='http://usejsdoc.org/'>documentação</a> para saber quais tags são reconhecidas e como modificar o tema básico. Um pequeno exemplo é o seguinte:</p>
+
+<code>
+	/**
+		@version 2.0
+		@license MIT
+	*/
+</code>
+
+<p>Quando compilado (com ./jsdoc path/to/javascript-source.js), vai criar uma pasta out/ com um arquivo HTML.</p>
+
+<p>Apesar de ainda estar em fase beta, é bem simples de usar e parece que 'vai para a frente'. Quando eu tiver algo feito com isso, colocarei aqui.</p>

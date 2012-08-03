@@ -345,8 +345,17 @@ body {
   padding-left: 60px;
 }
 .navbar li {
-  padding-right: 10px;
+  padding-right: 20px;
   float: left;
+}
+.navbar a {
+  color: #999999;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 19.2px;
+}
+.navbar a:hover {
+  text-decoration: none;
+  color: #222222;
 }
 header {
   padding-top: 15px;
@@ -387,27 +396,6 @@ article {
 /*
  * Posts
 */
-.post-list {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 30px;
-}
-.post-list h3 {
-  color: #222222;
-}
-.post-list ul {
-  list-style-type: none;
-}
-.post-list ul li {
-  line-height: 1.4em;
-}
-.post-list a {
-  font-size: 16px;
-}
-.post-list a:hover {
-  font-weight: bold;
-  text-decoration: none;
-}
 /*
  * Links
 */

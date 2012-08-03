@@ -37,8 +37,19 @@ body {
 	padding-left: @gridColumnWidth;
 	
 	li {
-		padding-right: 10px;
+		padding-right: @gridGutterWidth;
 		.pull-left();
+	}
+	
+	a {
+		color: @grayLight;
+		font-family: @titleFontFamily;
+		font-size: @baseFontSize * 1.2;
+		
+		&:hover {
+			text-decoration: none;
+			color: @grayDarker;
+		}
 	}
 }
 
@@ -91,30 +102,6 @@ article {
 */
 
 .post-list {
-	padding-top: @gridColumnWidth / 4;
-	padding-bottom: @gridColumnWidth / 4;
-	margin-bottom: @gridColumnWidth / 2;
-	
-	h3 {
-		color: @grayDarker;
-	}
-
-	ul {
-		list-style-type: none;
-		
-		li {
-			line-height: 1.4em;
-		}
-	}
-	
-	a {
-		font-size: @baseFontSize;
-		
-		&:hover {
-			font-weight: bold;
-			text-decoration: none;
-		}
-	}
 }
 
 /*

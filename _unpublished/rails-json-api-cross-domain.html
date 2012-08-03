@@ -1,0 +1,21 @@
+JSONP, Cross Domain, Rails, jQuery, AJAX
+
+-- JSON with Padding
+
+-- bloco respond_to com um :callback => params[:callback]
+
+-- 406 not acceptable
+
+-- mime_types.rb
+
+http://davidsulc.com/blog/2011/04/10/implementing-a-public-api-in-rails-3/
+
+http://davidsulc.com/blog/2011/04/17/consuming-a-public-rails-api-with-jquery/
+
+$.ajax({
+url: "http://dex.mojambo.net/pokemons/251.js",
+dataType: "jsonp",
+type: "GET",
+processData: false,
+contentType: "application/json",
+success: function(data) { console.log(data); }})

@@ -1,4 +1,4 @@
 ---
-layout: about
+layout: default
 title: About me
 ---

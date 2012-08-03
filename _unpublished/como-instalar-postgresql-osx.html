@@ -1,0 +1,52 @@
+<p>Outro dia eu fiquei umas boas duas horas configurando o PostgreSQL aqui para conseguir mexer no <a href="http://www.heroku.com/" target="_blank">heroku</a> sem problemas. Pois bem, consegui, mas foi um inferno. Escrevi este passo-a-passo para evitar que mais pessoas tenham essa dor de cabeça.</p>
+
+<h3>Instalação</h3>
+
+<p>Primeiro, é preciso baixar o PostgreSQL. Apesar de já existir a versão 9 (ou superior, eu não procurei muito), instalei e uso a 8.3 pois é a utilizada pelo <a href="http://www.heroku.com" target="_blank">heroku</a>. Para baixá-lo, usei o MacPorts, mas também se pode usar o Homebrew ou compilar o código-fonte:</p>
+
+<ul>
+	<li><a href="http://www.macports.org/" target="_blank">MacPorts</a></li>
+	<li><a href="http://mxcl.github.com/homebrew/" target="_blank">Homebrew</a></li>
+	<li><a href="http://www.postgresql.org/ftp/source/v8.3.17/" target="_blank">Onde baixar o código</a> e <a href="http://www.mkyong.com/database/how-to-compile-postgresql-database-source-code-in-linux/" target="_blank">como compilá-lo</a></li>
+</ul>
+
+<p>No Macports, use o seguinte comando:</p>
+
+<code>sudo port install postgresql83 postgresql83-server</code>
+
+<p>Com ele instalado, é "só usar". Podemos criar databases, usuários, etc usando o psql, um programa que vem junto do PostgreSQL. Entretanto, existe um <i>pequeno</i> bug que torna necessário executar todos os comandos estando na pasta /opt/local/lib/postgresql83/bin. Existem <a href="http://trac.macports.org/ticket/18024" target="_blank">alguns tickets</a> relacionados, mas a 8.3 é uma versão antiga. A forma mais simples de resolver isso é simplesmente usar um:</p>
+
+<code>cd /opt/local/lib/postgresql83/bin</code>
+
+<p>Antes de começar a mexer nos programas que acompanham o PostgreSQL.</p>
+
+<h3>Começando a usar...</h3>
+
+<p>Primeiro é preciso rodar o servidor. Lembrando o que falei sobre a pasta onde se executam os comandos, supondo que existe o (super) usuário "postgres":</p>
+
+<code>
+	cd /opt/local/lib/postgresql83/bin
+	sudo su postgres -c "/opt/local/lib/postgresql83/bin/pg_ctl -D /opt/local/var/db/postgresql83/defaultdb -l /opt/local/var/log/postgresql83/postgres.log start"
+</code>
+
+<p>Para criar um usuário novo (inclua as aspas):</p>
+
+<code>create user "usuario" with superuser password 'senha';</code>
+
+<p>Para criar uma database:</p>
+
+<code>createdb -U postgres nome_da_database</code>
+
+<p>Para finalizar o servidor:</p>
+
+<code>
+	cd /opt/local/lib/postgresql83/bin
+	sudo su postgres -c "/opt/local/lib/postgresql83/bin/pg_ctl status -D /opt/local/var/db/postgresql83/defaultdb"
+</code>
+
+<p>Boa sorte. :]</p>
+
+<h3>Referências</h3>
+
+<a href="http://olmonrails.wordpress.com/2008/08/12/switching-rails-to-postgresql/" target="_blank">Switching Rails to PostgreSQL</a>
+<a href="http://www.funonrails.com/2011/03/getting-started-with-rails-3-postgres.html" target="_blank">Getting started with Rails 3 Postgres</a>
