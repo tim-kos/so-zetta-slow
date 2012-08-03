@@ -355,6 +355,7 @@ body {
 }
 .navbar a:hover {
   text-decoration: none;
+  border: none;
   color: #222222;
 }
 header {
@@ -396,6 +397,17 @@ article {
 /*
  * Posts
 */
+.post-list a {
+  font-size: 19.2px;
+  -webkit-transition: color 1s ease-in;
+  -moz-transition: color 1s ease-in;
+  -ms-transition: color 1s ease-in;
+  -o-transition: color 1s ease-in;
+  transition: color 1s ease-in;
+}
+.post-list a:hover {
+  color: #2c547e;
+}
 /*
  * Links
 */
@@ -405,5 +417,6 @@ a {
 }
 a:hover {
   color: #407ab6;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px dashed #555555;
 }
