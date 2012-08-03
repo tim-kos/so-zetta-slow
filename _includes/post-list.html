@@ -1,7 +1,18 @@
 <ul class="post-list unstyled">
-{% for post in site.posts limit:5 %}
-   <li>
-		<a href="{{ post.url }}">{{ post.title }} ({{ post.date | date: "%d/%m" }})</a>
+{% for post in site.posts %}
+
+	{% capture post_month %}
+		{{ post.date | date: "%B" }}
+	{% endcapture %}
+	
+	{% unless month == post_month %}
+		{% assign month = post_month %}
+		<h2>{{ month }}</h2>
+	{% endunless %}
+
+	<li>
+		<a href="{{ post.url }}"><span class='important'>{{ post.date | date: "%d" }}</span> {{ post.title }}</a>
 	</li>
- {% endfor %}
+
+{% endfor %}
 </ul>

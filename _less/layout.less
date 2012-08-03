@@ -5,7 +5,7 @@
 }
 
 span.important {
-	color: @red;
+	color: lighten(@red, 10%);
 }
 
 html {
@@ -103,6 +103,10 @@ article {
 */
 
 .post-list {
+	
+	li {
+		margin-left: 25px;
+	}
 	
 	a {
 		font-size: @baseFontSize * 1.2;

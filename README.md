@@ -1,1 +1,1 @@
-This is the source code for my pt-BR blog.
+This is the source code for my blog.
