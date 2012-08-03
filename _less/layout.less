@@ -1,3 +1,7 @@
+/*
+ * Some helpers. Will move them to another file when necessary.
+*/
+
 .h1_with_size(@font-size) {
 	font-size: @font-size;
 	letter-spacing: 3px;
@@ -7,6 +11,10 @@
 span.important {
 	color: lighten(@red, 10%);
 }
+
+/*
+ * Main stuff.
+*/
 
 html {
 	background-color: @pageBackgroundColor;	
@@ -30,7 +38,7 @@ body {
 }
 
 /*
- * Header
+ * Header.
 */
 
 .navbar {
@@ -71,7 +79,7 @@ header {
 }
 
 /*
- * Footer
+ * Footer.
 */
 
 footer {
@@ -84,7 +92,7 @@ footer {
 }
 
 /*
- * Post
+ * Post.
 */
 
 .post {
@@ -99,13 +107,13 @@ article {
 }
 
 /*
- * Posts
+ * Posts list.
 */
 
 .post-list {
 	
 	li {
-		margin-left: 25px;
+		margin-left: 25px; // The same used in bootstrap/type.less
 	}
 	
 	a {
@@ -119,7 +127,7 @@ article {
 }
 
 /*
- * Links
+ * Links.
 */
 
 a {
