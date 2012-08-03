@@ -5,3 +5,6 @@ server: false
 server_port: 4000
 
 lsi: false
+
+# Folders to ignore when compiling the site.
+exclude: 'bin'
