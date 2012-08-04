@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Meus livros favoritos sobre JavaScript
+tags: [pt-br, javascript]
 ---
 
 JavaScript é uma linguagem bonita. Dinâmica, com tipagem fraca e herança prototípica, é difícil de se entender e usar corretamente. É mais do que um brinquedo.

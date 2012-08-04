@@ -6,5 +6,5 @@ server_port: 4000
 
 lsi: false
 
-# Folders to ignore when compiling the site.
-exclude: 'bin'
+# Folders and files to ignore when compiling the site.
+exclude: [bin, Gemfile, Gemfile.lock, README.md]

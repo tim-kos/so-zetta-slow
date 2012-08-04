@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Aprendendo a usar a asset pipeline no Rails 3.1+
+tags: [pt-br, ruby, rails]
 ---
 
 Depois de ter tido alguns problemas com a assets pipeline, tomei vergonha na cara e li o guia no [RailsGuides](http://guides.rubyonrails.org/asset_pipeline.html). Agora que entendi melhor como ele funciona, posso falar um pouco mais a respeito.

@@ -12,6 +12,7 @@ header = <<-END
 ---
 layout: post
 title: "#{ARGV[0]}"
+tags: [en-us, ]
 ---
 
 END

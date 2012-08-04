@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Installing SciRuby's NMatrix on OS X
+tags: [en-us, ruby, sciruby, osx]
 published: false
 ---
 

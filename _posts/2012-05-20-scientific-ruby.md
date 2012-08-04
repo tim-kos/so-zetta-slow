@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Scientific Ruby
+tags: [pt-br, ruby, sciruby]
+published: false
 ---
 
 Não, este não é um pouco (apenas) sobre a [Sciruby](http://sciruby.com), por mais que eu quisesse.

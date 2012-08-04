@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Atenção ao usar Array.prototype.reduce
+tags: [pt-br, javascript]
 ---
 
 Estava trabalhando na avaliadora de times do Mojambo ([typeCalc](http://github.com/mojambo/typecalc)) e comecei a usar bastante map(), reduce() e afins para simplificar o código.
