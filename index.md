@@ -3,12 +3,8 @@ layout: default
 title: So Zetta Slow
 ---
 
-> Este blog foi criado em cerca de 2h com o [Jekyll](https://github.com/mojombo/jekyll), alguns arquivos LESS do [Twitter Bootstrap](http://twitter.github.com/bootstrap/) e uns rascunhos feitos durante uma aula bastante chata. Depois disso fiz algumas _sprints_ de no máximo 1 hora para adicionar funcionalidades, modificar markup e (tentar) deixá-lo agradável.
+> Este blog foi criado em cerca de 2h com o [Jekyll](https://github.com/mojombo/jekyll), com [LESS](http://lesscss.org/) e com uns rascunhos feitos durante aulas chatas. Depois disso tirei umas horinhas para (tentar) deixá-lo agradável.
 
-> Tenho o hábito de escrever mais no tumblr, mas invisto mais tempo ao escrever aqui.
+This blog is a by-product of boring college classes and my readings of [The Non-Designer's Design Book](http://www.amazon.com/Non-Designers-Design-Edition-Designers-ebook/dp/B00125MJYM/ref=tmm_kin_title_0?ie=UTF8&qid=1344048960&sr=8-1). It's made using [Jekyll](https://github.com/mojombo/jekyll) and [LESS](http://lesscss.org/).
 
-Estou atualizando o design deste blog constantemente. Está quase pronto.
-
-Assim que terminar, vou cuidar do conteúdo desta página, [falarei um pouco mais sobre mim aqui](/about) e [deixarei minhas informações de contato aqui](/about/contact.html).
-
-Obrigado.
+Everything (except my posts and, possibly, images) is open source and can be found at [this repository](https://github.com/agarie/so-zetta-slow).
