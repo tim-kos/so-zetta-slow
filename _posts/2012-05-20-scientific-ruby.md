@@ -5,7 +5,9 @@ tags: [pt-br, ruby, sciruby]
 published: false
 ---
 
-Não, este não é um pouco (apenas) sobre a [Sciruby](http://sciruby.com), por mais que eu quisesse.
+No, this isn't a post (only) about [Sciruby](http://sciruby.com).
+
+I'm following some projects using Ruby to do Science. 
 
 Vou deixar aqui a lista de _gems_ as quais considero úteis para trabalhos científicos - desde clustering até visualização, passando por otimização, interpolação e álgebra linear.
 
@@ -19,5 +21,6 @@ Pretende ser para Ruby o que a SciPy (junto da NumPy e de outras que não conhe�
 + NMatrix
 + ai4r: 
 + Rubyvis
++ BioRuby
 
 Ainda estou terminando a lista e vou atualizar isso aqui.
