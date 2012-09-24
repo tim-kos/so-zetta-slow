@@ -319,9 +319,15 @@ cite {
 /*
  * Custom made files ahead.
 */
+/*
+ * Some helpers. Will move them to another file when necessary.
+*/
 span.important {
   color: #c83025;
 }
+/*
+ * Main stuff.
+*/
 html {
   background-color: #f5f5f5;
 }
@@ -339,7 +345,7 @@ body {
   box-shadow: #555555 2px 2px 6px 0;
 }
 /*
- * Header
+ * Header.
 */
 .navbar {
   padding-left: 60px;
@@ -368,12 +374,14 @@ header a:hover {
   text-decoration: none;
 }
 header h1 {
+  padding-top: 48px;
+  padding-bottom: 20px;
   font-size: 40px;
   letter-spacing: 3px;
   line-height: 22px;
 }
 /*
- * Footer
+ * Footer.
 */
 footer {
   padding-top: 15px;
@@ -383,9 +391,11 @@ footer p {
   letter-spacing: 1px;
 }
 /*
- * Post
+ * Post.
 */
 .post h1 {
+  padding-top: 33.6px;
+  padding-bottom: 14px;
   font-size: 28px;
   letter-spacing: 3px;
   line-height: 22px;
@@ -394,8 +404,17 @@ article {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+article code {
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 11px;
+  background-color: #eeeeee;
+}
+article pre {
+  padding: 20px;
+  background-color: #eeeeee;
+}
 /*
- * Posts
+ * Posts list.
 */
 .post-list li {
   margin-left: 25px;
@@ -412,7 +431,7 @@ article {
   color: #2c547e;
 }
 /*
- * Links
+ * Links.
 */
 a {
   color: #6194c8;

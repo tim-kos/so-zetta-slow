@@ -3,6 +3,8 @@
 */
 
 .h1_with_size(@font-size) {
+	padding-top: @font-size * 1.2;
+	padding-bottom: @font-size * 0.5;
 	font-size: @font-size;
 	letter-spacing: 3px;
 	line-height: 22px;
@@ -104,6 +106,17 @@ footer {
 article {
 	padding-top: @gridColumnWidth / 4;
 	padding-bottom: @gridColumnWidth / 4;
+	
+	code {
+		font-family: @monospaceFontFamily;
+		font-size: @monospaceFontSize;
+		background-color: @grayLighter;
+	}
+	
+	pre {
+		padding: @preCodePadding;
+		background-color: @grayLighter;
+	}
 }
 
 /*

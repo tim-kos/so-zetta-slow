@@ -11,7 +11,7 @@ postname = ARGV[0].strip.downcase.gsub(/ /, '-')
 header = <<-END
 ---
 layout: post
-title: "#{ARGV[0]}"
+title: #{ARGV[0]}
 tags: [en-us, ]
 ---
 
