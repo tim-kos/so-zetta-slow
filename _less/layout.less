@@ -7,7 +7,7 @@
 	padding-bottom: @font-size * 0.5;
 	font-size: @font-size;
 	letter-spacing: 3px;
-	line-height: 22px;
+	line-height: @font-size * 0.78571428;
 }
 
 span.important {
@@ -107,14 +107,23 @@ article {
 	padding-top: @gridColumnWidth / 4;
 	padding-bottom: @gridColumnWidth / 4;
 	
+	h2 {
+		padding-top: @baseFontSize * 0.9;
+		padding-bottom: @baseFontSize * 0.3;
+		font-size: @baseFontSize * 1.25;
+		letter-spacing: 3px;
+		line-height: @baseFontSize * 0.78571428;
+	}
+	
 	code {
+		padding: @codePadding;
 		font-family: @monospaceFontFamily;
 		font-size: @monospaceFontSize;
 		background-color: @grayLighter;
 	}
 	
 	pre {
-		padding: @preCodePadding;
+		padding: @prePadding;
 		background-color: @grayLighter;
 	}
 }

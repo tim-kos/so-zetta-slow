@@ -378,7 +378,7 @@ header h1 {
   padding-bottom: 20px;
   font-size: 40px;
   letter-spacing: 3px;
-  line-height: 22px;
+  line-height: 31.4285712px;
 }
 /*
  * Footer.
@@ -398,15 +398,23 @@ footer p {
   padding-bottom: 14px;
   font-size: 28px;
   letter-spacing: 3px;
-  line-height: 22px;
+  line-height: 21.99999984px;
 }
 article {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+article h2 {
+  padding-top: 14.4px;
+  padding-bottom: 4.8px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 12.57142848px;
+}
 article code {
+  padding: 2px;
   font-family: Monaco, "Courier New", monospace;
-  font-size: 11px;
+  font-size: 12px;
   background-color: #eeeeee;
 }
 article pre {
