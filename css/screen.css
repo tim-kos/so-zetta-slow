@@ -415,11 +415,13 @@ article code {
   padding: 2px;
   font-family: Monaco, "Courier New", monospace;
   font-size: 12px;
-  background-color: #eeeeee;
+  background-color: #f8f8ff;
+  border: solid 1px #eaeaea;
 }
 article pre {
   padding: 20px;
-  background-color: #eeeeee;
+  background-color: #f8f8ff;
+  border: solid 1px #dddddd;
 }
 /*
  * Posts list.
@@ -437,6 +439,21 @@ article pre {
 }
 .post-list a:hover {
   color: #2c547e;
+}
+.post-list h1 {
+  padding-top: 33.6px;
+  padding-bottom: 14px;
+  font-size: 28px;
+  letter-spacing: 3px;
+  line-height: 21.99999984px;
+  padding-top: 3em;
+}
+.post-list h2 {
+  padding-top: 26.4px;
+  padding-bottom: 11px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 17.28571416px;
 }
 /*
  * Links.

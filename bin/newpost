@@ -17,7 +17,7 @@ tags: [en-us, ]
 
 END
 
-post = "/Users/carlosagarie/Dropbox/projects/blog/_posts/#{date_prefix}-#{postname}.md"
+post = "./_posts/#{date_prefix}-#{postname}.md"
 
 File.open(post, 'w+') do |f|
   f << header

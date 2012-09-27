@@ -119,12 +119,14 @@ article {
 		padding: @codePadding;
 		font-family: @monospaceFontFamily;
 		font-size: @monospaceFontSize;
-		background-color: @grayLighter;
+		background-color: @codeAndPreBackground;
+		border: solid 1px @codeBorder;
 	}
 	
 	pre {
 		padding: @prePadding;
-		background-color: @grayLighter;
+		background-color: @codeAndPreBackground;
+		border: solid 1px @preBorder;
 	}
 }
 
@@ -145,6 +147,16 @@ article {
 		&:hover {
 			color: darken(@linkColorHover, 15%);
 		}
+	}
+	
+	h1 {
+		.h1_with_size(28px);
+		// More padding to improve contrast between different years
+		padding-top: 3em;
+	}
+	
+	h2 {
+		.h1_with_size(22px);
 	}
 }
 

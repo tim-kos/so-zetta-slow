@@ -9,5 +9,5 @@ gem 'kramdown'
 gem 'rdiscount'
 gem 'markdown'
 
-gem 'commonjs'
+# gem 'commonjs'
 # gem 'jekyll-less'
