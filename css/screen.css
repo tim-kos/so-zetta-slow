@@ -404,6 +404,13 @@ article {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+article h1 {
+  padding-top: 26.4px;
+  padding-bottom: 11px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 17.28571416px;
+}
 article h2 {
   padding-top: 14.4px;
   padding-bottom: 4.8px;
