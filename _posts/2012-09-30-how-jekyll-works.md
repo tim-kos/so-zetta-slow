@@ -2,6 +2,7 @@
 layout: post
 title: How Jekyll works
 tags: [en-us, ruby, jekyll]
+date: 2012-10-02
 ---
 
 Last saturday, I decided to build a Jekyll plugin to get the quotes from my Tumblr account (through a quotes.json file conveniently saved using a Rake task, inspired by [1]) and generate a "quotes index".
@@ -97,7 +98,7 @@ The catch is the `Jekyll::Site.cleanup` method: it'll remove from the destinatio
 	
 Just add the page to the site.pages array before returning. To understand what I'm saying, take a look at the plugin (after all this code archeology, it's amazing how simple it turned out to be). The current code for the generator [can be found in this gist](https://gist.github.com/3816637).
 
-I'll write a `How Jekyll works?` page for the wiki in Jekyll's repository tomorrow. :)
+I wrote a [How Jekyll works?](https://github.com/mojombo/jekyll/wiki/How-Jekyll-works) page for the wiki in Jekyll's repository to help others interested in this.
 
 # Sources
 
