@@ -14,6 +14,7 @@ GEM
       kramdown (~> 0.13)
       liquid (~> 2.3)
       maruku (~> 0.5)
+    json (1.7.5)
     kramdown (0.13.7)
     liquid (2.3.0)
     markdown (1.0.0)
@@ -32,9 +33,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fast-stemmer
   jekyll
-  kramdown
-  liquid
+  json
   markdown
   rdiscount
