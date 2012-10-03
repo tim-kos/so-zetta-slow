@@ -9,3 +9,6 @@ lsi: false
 
 # Folders and files to ignore when compiling the site.
 exclude: [bin, Gemfile, Gemfile.lock, README.md]
+
+# Size limit for the quotes.
+text_size_limit: 1000
