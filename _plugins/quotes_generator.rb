@@ -44,7 +44,7 @@ module Jekyll
       # Generate a list of quotes. It isn't worth to require Nokogiri for such
       # a tiny string.
       string = ''
-      string << "<p>These quotes are automatically fetched from my Tumblr account"
+      string << "<p>These quotes are automatically fetched from my Tumblr account "
       string << "<a href='http://turing-machine.tumblr.com'>turing-machine</a>.</p>"
       quotes.each do |q|
         string << "<blockquote>"

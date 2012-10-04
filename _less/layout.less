@@ -29,6 +29,7 @@ body {
 
 .container {
 	padding: @gridColumnWidth;
+	padding-top: @gridColumnWidth / 4;
 	padding-bottom: @gridColumnWidth / 4;
 	
 	@margin: @gridColumnWidth / 2;
@@ -143,7 +144,7 @@ article {
 */
 
 .post-list {
-	
+		
 	li {
 		margin-left: 25px; // The same used in bootstrap/type.less
 	}
@@ -159,8 +160,6 @@ article {
 	
 	h1 {
 		.h1_with_size(28px);
-		// More padding to improve contrast between different years
-		padding-top: 3em;
 	}
 	
 	h2 {
