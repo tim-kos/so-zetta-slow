@@ -14,3 +14,8 @@ task :get_quotes, [:api_key_location] do |t, args|
     f << open(api_url + api_key).readlines.first
   end
 end
+
+desc "Process LESS into CSS."
+task :less do
+  sh "lessc _less/onox.less -x > css/screen.css"
+end

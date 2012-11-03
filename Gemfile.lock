@@ -35,5 +35,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   json
+  liquid
   markdown
   rdiscount
