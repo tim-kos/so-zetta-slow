@@ -1,11 +1,6 @@
 require "rake"
 require "open-uri"
 
-desc "Build the site."
-task :build => [:get_quotes, :less] do
-  sh "jekyll"
-end
-
 desc "Create a quotes.json file in the _data dir"
 task :get_quotes, [:api_key_location] do |t, args|
   # Create _data dir if it doesn't exist.
