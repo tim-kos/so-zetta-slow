@@ -59,7 +59,7 @@ Finally, a cell (i, j) is contained in bin _k_ (where _k_ = 1, ..., _n_) if _k_ 
 A search is made on the histogram to find "valleys" (sequential bins with magnitude less than some _threshold_, which is problem-specific). Also, the algorithm must know the direction in which the objective lies.   
 With these in hand, the direction the robot must travel to in this instant is the center of the valley nearest to the objective direction.
 
-And the VFH is basically this. There's room for improvement, indeed: in 1998 a better version was published[3], named VFH+. And in 2000, a version that combines global path planning (A* search) and the VFH+ was released[4], named VFH*.
+And the VFH is basically this. There's room for improvement, indeed: in 1998 a better version was published[3], named VFH+. And in 2000, a version that combines global path planning (A\* search) and the VFH+ was released[4], named VFH\*.
 
 ## My implementation
 
