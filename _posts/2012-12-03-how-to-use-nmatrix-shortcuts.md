@@ -5,7 +5,7 @@ date: 2012-12-06
 tags: [en-us, ruby, nmatrix, open source]
 ---
 
-John Woods [merged my last pull request](https://github.com/SciRuby/nmatrix/commit/2b480ce0985affc7218fc341fcb4e5024b30545b) in the NMatrix master branch recently and I wanted to write about why they were created and what can be done with them.
+John Woods [merged my last pull request to NMatrix](https://github.com/SciRuby/nmatrix/commit/2b480ce0985affc7218fc341fcb4e5024b30545b) recently and I wanted to write about why we created these shortcuts and what can be done with them.
 
 ## The need of shortcuts
 
