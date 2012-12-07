@@ -97,7 +97,7 @@ The other thing that I've wanted to do is to use `linspace` to generate points f
 
 	require 'nmatrix'
 
-	vector = NVector.linspace(0, PI, 10)
+	vector = NVector.linspace(0, Math::PI, 10)
 	vector.pretty_print
 
 	# 0.0
@@ -111,9 +111,11 @@ The other thing that I've wanted to do is to use `linspace` to generate points f
 	# 2.792526803190927
 	# 3.141592653589793
 	
-	vector.each do |x|
-	  puts sin(x)
+	10.times do |i|
+	  vector[k, 0] = Math::sin(vector[k, 0])
 	end
+	
+	vector.pretty_print
 	
 	# 0.0
 	# 0.3420201433256687
