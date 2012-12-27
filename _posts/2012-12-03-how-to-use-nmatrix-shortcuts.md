@@ -7,7 +7,7 @@ tags: [en-us, ruby, nmatrix, open source]
 
 John Woods [merged my last pull request to NMatrix](https://github.com/SciRuby/nmatrix/commit/2b480ce0985affc7218fc341fcb4e5024b30545b) recently and I wanted to write about why we created these shortcuts and what can be done with them.
 
-## The need of shortcuts
+## The need for shortcuts
 
 Originally, the NMatrix shortcuts were written by [Daniel Carrera](https://github.com/dcarrera) and sent to the mailing list, where I started working with them. Some discussions, decisions and 2 pull requests later, we have a working set of methods to create common matrices (`zeros`, `ones`, `random`, etc) and do some cool stuff (`column` and `linspace`) very easily.
 
