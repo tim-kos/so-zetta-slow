@@ -26,6 +26,7 @@ GEM
     posix-spawn (0.3.6)
     props (1.0.0)
     rdiscount (1.6.8)
+    stringex (1.5.1)
     syntax (1.0.0)
     textutils (0.2.0)
 
@@ -38,3 +39,4 @@ DEPENDENCIES
   liquid
   markdown
   rdiscount
+  stringex
