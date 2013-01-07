@@ -22,14 +22,11 @@ task :get_quotes, [:api_key_location] do |t, args|
   end
 end
 
-# usage rake new_post[my-new-post] or rake new_post['my new post'] or rake
-# new_post (defaults to "new-post").
 #
 # From Octopress.
+#
 desc "Begin a new post in #{source_dir}/#{posts_dir}"
-task :post, :title do |t, args|
-  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
-
+task :create, :title do |t, args|
   mkdir_p "#{source_dir}/#{posts_dir}"
   args.with_defaults(:title => 'new-post')
   title = args.title

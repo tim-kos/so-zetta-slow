@@ -9,7 +9,7 @@ As I've been working with [NMatrix](http://github.com/sciruby/nmatrix) documenta
 
 Let's start with the simplest thing possible: to create a NMatrix from an array of values, without any options:
 
-	>> m = N[[2, 3, 4], [7, 8, 9]]
+	>> m = N[ [2, 3, 4], [7, 8, 9] ]
 	=> #<NMatrix:0x007f8e121b6cf8shape:[2,3] dtype:int32 stype:dense> 
 	>> m.pp
 	  [2, 3, 4]

@@ -8,7 +8,9 @@ server_port: 4000
 lsi: false
 
 # Folders and files to ignore when compiling the site.
-exclude: [bin, Gemfile, Gemfile.lock, README.md]
+exclude: [Gemfile, Gemfile.lock, README.md]
 
-# Size limit for the quotes.
+# Configuration for the quotes page.
 text_size_limit: 1000
+tumblr_account: "turing-machine"
+tumblr_quotes_layout: "default"
