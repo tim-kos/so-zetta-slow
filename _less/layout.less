@@ -11,7 +11,7 @@
 }
 
 span.important {
-	color: lighten(@red, 10%);
+	color: lighten(@red, 15%);
 }
 
 /*
@@ -148,21 +148,34 @@ article {
 		margin-left: 25px; // The same used in bootstrap/type.less
 	}
 	
-	a {
+	.post-title {
+		font-size: @baseFontSize * 1.4;
+		color: @grayDark;
+		
+		&:hover {
+			color: lighten(@grayDark, 15%);
+			border: none;
+		}
+	}
+	
+	.post-list-title {
 		font-size: @baseFontSize * 1.2;
-		.transition(color 1s ease-in);
 		
 		&:hover {
 			color: darken(@linkColorHover, 15%);
 		}
 	}
-	
+		
 	h1 {
 		.h1_with_size(28px);
 	}
 	
 	h2 {
 		.h1_with_size(22px);
+	}
+	
+	.read-more {
+		color: @grayLight;
 	}
 }
 

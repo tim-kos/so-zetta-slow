@@ -1,0 +1,16 @@
+<ul class="post-list unstyled">
+{% for post in site.posts limit:5 %}
+
+	<li>
+		<h2>
+			<a href="{{ post.url }}" class='post-title'>{{ post.title }}</a>
+			<small>{{ post.date | date: "%m/%d/%y" }}</small>
+		</h2>
+		
+		<p>{{ post.excerpt }}</p>
+		
+		<p><a href="{{ post.url }}" class='read-more'>Read more...</a></p>
+	</li>
+
+{% endfor %}
+</ul>

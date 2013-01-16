@@ -5,13 +5,22 @@ date: 2013-01-09 21:48
 tags: [en-us, ruby, rubyvis, sciruby]
 ---
 
-I was trying to get some graphics with Ruby to test some features of [SciRuby][sciruby]. Well, I know [Rubyvis][rubyvis site], which was created by [Claudio Bustos](https://github.com/clbustos) some time ago -- it's a gem to create SVG files from Ruby.
+I was trying to make some graphics with Ruby to test features of [SciRuby][sciruby]. Well, I know [Rubyvis][rubyvis site], which was created by [Claudio Bustos](https://github.com/clbustos) some time ago -- it's a gem to create SVG files.
 
-A SVG (Scalable Vector Graphics) file is, according to [Wikipedia](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics), "an XML-based vector image format for two-dimensional graphics that has support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999."
+<!--more-->
 
-Also:
+A SVG (Scalable Vector Graphics) file is: 
 
-<blockquote>All major modern web browsers (...) have at least some degree of support for SVG and can render the markup directly.<small>Wikipedia</small></blockquote>
+<blockquote>
+(...) an XML-based vector image format for two-dimensional graphics that has support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999.
+
+(...)
+
+All major modern web browsers (...) have at least some degree of support for SVG and can render the markup directly.
+<small>
+	<a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Wikipedia</a>
+</small>
+</blockquote>
 
 That's enough for me. Let's see how to install it.
 

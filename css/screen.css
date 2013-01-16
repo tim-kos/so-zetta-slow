@@ -57,7 +57,7 @@ q:before,q:after,blockquote:before,blockquote:after{content:"";}
 address{display:block;margin-bottom:32px;line-height:32px;font-style:normal;}
 small{font-size:100%;}
 cite{font-style:normal;}
-span.important{color:#c83025;}
+span.important{color:#d83a2e;}
 html{background-color:#f5f5f5;}
 body{width:960px;margin:0 auto;}
 .container{padding:60px;padding-bottom:15px;margin:30px 0 30px 0;background-color:rgba(255, 255, 255, 0.9);-webkit-box-shadow:#555555 2px 2px 6px 0;-moz-box-shadow:#555555 2px 2px 6px 0;box-shadow:#555555 2px 2px 6px 0;}
@@ -72,7 +72,9 @@ article h2{padding-top:19.2px;padding-bottom:14.4px;font-size:25.6px;letter-spac
 article code{padding:2px;font-family:Monaco,"Courier New",monospace;font-size:12px;background-color:#f8f8ff;border:solid 1px #eaeaea;}
 article pre{padding:20px;background-color:#f8f8ff;border:solid 1px #dddddd;}article pre code{border:none;}
 .post-list li{margin-left:25px;}
-.post-list a{font-size:19.2px;-webkit-transition:color 1s ease-in;-moz-transition:color 1s ease-in;-ms-transition:color 1s ease-in;-o-transition:color 1s ease-in;transition:color 1s ease-in;}.post-list a:hover{color:#2c547e;}
+.post-list .post-title{font-size:22.4px;color:#333333;}.post-list .post-title:hover{color:#595959;border:none;}
+.post-list .post-list-title{font-size:19.2px;}.post-list .post-list-title:hover{color:#2c547e;}
 .post-list h1{padding-top:33.6px;padding-bottom:14px;font-size:28px;letter-spacing:3px;line-height:21.99999984px;}
 .post-list h2{padding-top:26.4px;padding-bottom:11px;font-size:22px;letter-spacing:3px;line-height:17.28571416px;}
+.post-list .read-more{color:#999999;}
 a{color:#6194c8;text-decoration:none;}a:hover{color:#407ab6;text-decoration:none;border-bottom:1px dashed #555555;}

@@ -15,6 +15,8 @@ I know it sounds lame, but I decided to be more productive during 2013. Some pro
 - The scope of each project tend to get out of control or too ambitious.
 - I hardly ever throw away an idea, except when I find a better one.
 
+<!--more-->
+
 Obviously this situation is frustrating. So I'm trying to develop a plan to attack it, without compromising creativity and general enjoyment of programming:
 
 - Maintain a canonical place for information and ideas. I started using [Evernote](http://evernote.com), because there's an app for iOS and OS X. I have two main notebooks, one for unpublished blog posts (I want to write more!) and another for lists and general information. The latter contains information about some specific projects (e.g. NMatrix), my general to do list and an "ideas for small projects" note.

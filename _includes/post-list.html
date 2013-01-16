@@ -20,7 +20,8 @@
 	{% endunless %}
 
 	<li>
-		<a href="{{ post.url }}"><span class='important'>{{ post.date | date: "%d" }}</span> {{ post.title }}</a>
+		<span class='important post-list-title'>{{ post.date | date: "%d" }}</span>
+		<a href="{{ post.url }}" class='post-list-title'> {{ post.title }}</a>
 	</li>
 
 {% endfor %}

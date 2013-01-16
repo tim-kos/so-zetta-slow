@@ -16,6 +16,8 @@ Let's start with the simplest thing possible: to create a NMatrix from an array 
 	  [7, 8, 9]
 	=> nil 
 
+<!--more-->
+
 When I started playing with this project, I had problems myself about poor documentation: how the hell do I *use* it? My first doubt was about `stypes` and `dtypes`. I'll explain what they are and show examples of some patterns to create new matrices along the way.
 
 ## The type of a matrix's elements

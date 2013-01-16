@@ -1,6 +1,7 @@
 require "rake"
 require "open-uri"
 require 'stringex'
+require 'fileutils'
 
 source_dir = "./"
 posts_dir = "_posts"
@@ -49,6 +50,6 @@ end
 
 desc "Process LESS into CSS."
 task :less do
-  sh "mkdir css"
+  FileUtils.mkdir_p 'css'
   sh "lessc _less/onox.less -x > css/screen.css"
 end

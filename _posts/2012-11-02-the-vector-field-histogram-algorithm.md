@@ -8,6 +8,8 @@ I'm taking a course on real-time systems at my college. In one of the projects, 
 
 For this, I remembered some papers I've read in Brazil about path planning algorithms and one of them - the Vector Field Histogram (VFH) - sounded sufficiently simple to be implemented in two weeks. Of course, I had to implement the *whole* system: communication with sensors, some kind of output (in my case, via UART), the interthread communication mechanism, etc.
 
+<!--more-->
+
 Well, my background with Ruby made me design it so the VFH algorithm could be substituted by a stub, making the system easily testable. So I did it. However, I had a surprise, a very strange one for someone accostumed with high-level languages and an OS: there's no heap on the microcontroller, so I can't use `malloc()`. Damn.
 
 Well, the professor like my coding style and accepted the project as is, after talking about implementing a memory allocation function myself. Anyway, I wrote this post to explain how VFH works.
