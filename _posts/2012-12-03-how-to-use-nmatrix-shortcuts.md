@@ -63,6 +63,8 @@ I'll create a separate wiki page for the shortcuts to be able to organize and pu
 
 First, let's try normalizing the columns of a NMatrix.
 
+{% highlight ruby %}
+
 	require 'nmatrix'
 
 	m = NMatrix.seq(3, :float32)
@@ -93,9 +95,13 @@ First, let's try normalizing the columns of a NMatrix.
 	# 1.0
 	# 1.0
 
+{% endhighlight %}
+
 Unfortunately, slice by reference isn't working on HEAD, so we can't make this code a bit smarter (see issue [#51](https://github.com/SciRuby/nmatrix/issues/51)).
 
 The other thing that I've wanted to do is to use `linspace` to generate points for plotting sines, cosines, etc. Let me show an example:
+
+{% highlight ruby %}
 
 	require 'nmatrix'
 
@@ -129,6 +135,8 @@ The other thing that I've wanted to do is to use `linspace` to generate points f
 	# 0.6427876096865395
 	# 0.3420201433256689
 	# 1.2246467991473532e-16
+	
+{% endhighlight %}
 	
 These results show something good: we are able to use NMatrix for simple tasks already. Of course, there are problems to be solved, e.g. slice by reference, inversion for all dtypes, eigenvalues. But it's going somewhere, it's growing. 
 

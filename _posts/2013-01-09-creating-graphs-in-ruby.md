@@ -36,6 +36,8 @@ Then install the gem:
 
 Now you're ready to use it. Just browse through the [Rubyvis documentation][rubyvis docs] or use the sample program to see if it's working:
 
+{% highlight ruby %}
+
 		require 'rubyvis'
 
 		vis = Rubyvis::Panel.new do 
@@ -54,6 +56,8 @@ Now you're ready to use it. Just browse through the [Rubyvis documentation][ruby
 		File.open("test.svg", "w") do |f|
 		  f.write(vis.to_svg) # Write the SVG content on the file.
 		end
+
+{% endhighlight %}
 
 And you should be done. But how to view it outside of a browser (or if you want to post it somewhere, blabla)? Use the [`rsvg` command line utility][rsvg command] to convert svg to png. First, the gem:
 

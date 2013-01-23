@@ -13,6 +13,8 @@ But I didn't need something too fancy, as Wobbie is a very simple tool &#151; I 
 
 Why is that? Mostly compatibility: it's part of Ruby's standard library. And it's extremely simple to use. For example:
 
+{% highlight ruby %}
+
 		require 'optparser'
 
 		options = {}
@@ -20,8 +22,12 @@ Why is that? Mostly compatibility: it's part of Ruby's standard library. And it'
 		  # ...
 		end
 		opts.parse! # Empty the ARGV array.
+		
+{% endhighlight %}
 
 And it'll generate a help automatically (with --help/-h), together with the options you created:
+
+{% highlight ruby %}
 
 		$ wobbie -h
 		Wobbie is a WordPress theme generator.
@@ -37,7 +43,11 @@ And it'll generate a help automatically (with --help/-h), together with the opti
 		    -v, --version                    Print current version and exit.
 		    -V, --verbose                    Print more information as the template is processed.
 
+{% endhighlight %}
+
 And creating options is pretty simple. The most important ones are true/false (on/off) switches and receiving parameters, for example regexps and directory/file names:
+
+{% highlight ruby %}
 
 		opts.on('-b', '--bower', 'Create a components.json file for the theme.') do |bower|
 		  options['bower'] = true
@@ -47,12 +57,18 @@ And creating options is pretty simple. The most important ones are true/false (o
 		  options['source_dir'] = source_dir
 		end
 
+{% endhighlight %}
+
 The idea is that each option can have a parameter after it (`bower` and `source_dir`) and you use it as you see fit, e.g. just setting a flag on the options hash or using the actual content.
 
 I can pass the 'my\_new\_theme' directory to the program like this:
 
+{% highlight bash %}
+
 		$ wobbie -s my_new_theme
 		$ wobbie --source my_new_theme
+
+{% endhighlight %}
 
 Ah, after you use the `parse!` method, the options are removed from the `ARGV` array, so you can still pass arguments without them being used by OptionParser.
 
