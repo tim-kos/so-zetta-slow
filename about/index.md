@@ -19,6 +19,7 @@ If you want to talk to me, the most certain way is through e-mail: _carlos@onox.
 
 I have accounts on some social networks too:
 
-- [@carlos_agarie](http://twitter.com/carlos_agarie)
-- [LinkedIn](http://linkedin.com/pub/carlos-agarie/12/690/994)
+- [@carlos_agarie &ndash; I mostly write in portuguese](http://twitter.com/carlos_agarie)
 - [Github](http://github.com/agarie)
+- [Resume on Stackoverflow](http://careers.stackoverflow.com/cv/edit/132985)
+- [LinkedIn](http://linkedin.com/pub/carlos-agarie/12/690/994)

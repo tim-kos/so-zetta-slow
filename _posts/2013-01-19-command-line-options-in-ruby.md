@@ -27,7 +27,7 @@ Why is that? Mostly compatibility: it's part of Ruby's standard library. And it'
 
 And it'll generate a help automatically (with --help/-h), together with the options you created:
 
-{% highlight ruby %}
+{% highlight bash %}
 
 		$ wobbie -h
 		Wobbie is a WordPress theme generator.
